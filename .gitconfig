@@ -1,0 +1,41 @@
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[alias]
+	a = add
+	aa = add --all
+	amend = commit --amend --reset-author
+	b = branch
+	bm = branch -m
+	bn = branch -n
+	br = branch -r
+	bu = branch -u
+	c = commit
+	cl = clone
+	cm = commit -m
+	cma = commit -am
+	co = checkout
+	d = diff
+	dc = diff --cached
+	l = log
+	lo = log --oneline
+	p = push
+	pf = push --force
+	pu = pull
+	pur = pull --rebase
+	r = !rm -rf
+	ra = rebase --abort
+	rc = rebase --continue
+	ri = rebase --interactive
+	rir = rebase --interactive --root
+	s = status
+	st = stash
+	sta = stash apply
+	stl = stash list
+	stp = stash pop
+	sts = stash save
+	to = !touch
+	vi = !vim
+[include]
+	path = ~/.gituser
