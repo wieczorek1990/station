@@ -16,8 +16,10 @@
 	cm = commit -m
 	cma = commit -am
 	co = checkout
+	cp = cherry-pick
 	d = diff
 	dc = diff --cached
+	f = fetch --all --prune
 	l = log
 	lo = log --oneline
 	p = push
