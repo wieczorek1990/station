@@ -8,6 +8,7 @@ install:
 	ln -fs ${PWD}/.gitconfig ${HOME}/.gitconfig
 
 versions:
+	fish --version && echo
 	python3 --version && echo
 	swift --version && echo
 	rustc --version
