@@ -7,6 +7,8 @@
 	aa = add --all
 	amend = commit --amend --reset-author
 	b = branch
+	bd = branch -d
+	bdf = branch -D
 	bm = branch -m
 	bn = branch -n
 	br = branch -r
