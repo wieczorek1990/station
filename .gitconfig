@@ -10,7 +10,7 @@
 	bd = branch -d
 	bdf = branch -D
 	bm = branch -m
-	bn = branch -n
+	bn = checkout -b
 	br = branch -r
 	bu = branch -u
 	c = commit
@@ -40,6 +40,7 @@
 	stp = stash pop
 	sts = stash save
 	to = !touch
+	undo = reset --soft @~1
 	vi = !vim
 [include]
 	path = ~/.gituser
