@@ -44,3 +44,5 @@
 	vi = !vim
 [include]
 	path = ~/.gituser
+[init]
+	defaultBranch = main
