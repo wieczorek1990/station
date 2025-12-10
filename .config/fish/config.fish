@@ -11,4 +11,8 @@ if status is-interactive
     function up
         brew update && brew upgrade && brew doctor
     end
+    # Init
+    function init
+        ssh-add
+    end
 end
