@@ -1,4 +1,6 @@
 install:
+	# VIM
+	gln -fs "${PWD}/.vimrc" "${HOME}/.vimrc"
 	# Git
 	gln -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
 	# Fish
@@ -6,10 +8,10 @@ install:
 	gln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
 
 dependencies:
-	brew install coreutils
+	brew install coreutils fish python rust swift
 
 versions:
 	fish --version && echo
 	python3 --version && echo
-	swift --version && echo
+	swiftc --version && echo
 	rustc --version
