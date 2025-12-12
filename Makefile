@@ -9,7 +9,7 @@ install:
 
 dependencies:
 	brew install\
- coreutils git gnupg imagemagick sox sponge tree vim\
+ coreutils gh git gnupg imagemagick sox sponge tree vim\
  fish python rust swift\
 
 
