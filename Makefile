@@ -8,7 +8,10 @@ install:
 	gln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
 
 dependencies:
-	brew install coreutils fish python rust swift
+	brew install\
+ coreutils git gnupg imagemagick sox sponge tree vim\
+ fish python rust swift\
+
 
 versions:
 	fish --version && echo

@@ -1,5 +1,11 @@
 export GPG_TTY=(tty)
-fish_add_path ~/.local/bin/ /opt/homebrew/bin/ /opt/homebrew/sbin/
+
+fish_add_path\
+  ~/.local/bin/\
+ /opt/homebrew/bin/\
+ /opt/homebrew/sbin/\
+ /opt/homebrew/opt/swift/bin/
+
 set -U fish_greeting
 
 if status is-interactive
