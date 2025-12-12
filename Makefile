@@ -15,3 +15,9 @@ versions:
 	python3 --version && echo
 	swiftc --version && echo
 	rustc --version
+
+locations:
+	which fish
+	which python3
+	which swift
+	which rustc
