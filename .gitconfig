@@ -26,6 +26,7 @@
 	lo = log --oneline
 	p = push
 	pf = push --force
+    pt = push --tags
 	pu = pull
 	pur = pull --rebase
 	r = !rm -rf
@@ -39,6 +40,7 @@
 	stl = stash list
 	stp = stash pop
 	sts = stash save
+    td = tag -d
 	to = !touch
 	undo = reset --soft @~1
 	vi = !vim
