@@ -1,17 +1,21 @@
+LN = ln
+
 install:
+	# bash
+	mkdir -p "${HOME}/.bashrc.d/"
+	${LN} -fs "${PWD}/.bashrc.d/up.sh" "${HOME}/.bashrc.d/up.sh"
 	# VIM
-	gln -fs "${PWD}/.vimrc" "${HOME}/.vimrc"
+	${LN} -fs "${PWD}/.vimrc" "${HOME}/.vimrc"
 	# Git
-	gln -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
+	${LN} -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
 	# Fish
 	mkdir -p "${HOME}/.config/fish/"
-	gln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
+	${LN} -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
 
 dependencies:
 	brew install\
- coreutils gh git gnupg imagemagick sox sponge tree vim\
- fish python rust swift\
-
+ coreutils gh git gnupg imagemagick python3-devel readline-devel sox sponge tree vim\
+ fish python rust swift
 
 versions:
 	fish --version && echo
