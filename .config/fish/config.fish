@@ -21,4 +21,8 @@ if status is-interactive
     function init
         ssh-add
     end
+    # Home
+    function home
+        cd ~/Software/Soiree/dancing-fire/
+    end
 end
