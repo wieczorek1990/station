@@ -1,7 +1,7 @@
 export GPG_TTY=(tty)
 
 fish_add_path\
-  ~/.local/bin/\
+ /usr/local/bin/\
  /opt/homebrew/bin/\
  /opt/homebrew/sbin/\
  /opt/homebrew/opt/swift/bin/
