@@ -1,5 +1,3 @@
-export GPG_TTY=(tty)
-
 fish_add_path\
  /usr/local/bin/\
  /opt/homebrew/bin/\
