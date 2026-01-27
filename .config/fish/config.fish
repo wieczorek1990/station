@@ -1,8 +1,6 @@
 fish_add_path\
  /usr/local/bin/\
- /opt/homebrew/bin/\
- /opt/homebrew/sbin/\
- /opt/homebrew/opt/swift/bin/
+ /opt/homebrew/bin/
 
 set -U fish_greeting
 
@@ -21,6 +19,10 @@ if status is-interactive
     end
     # Home
     function home
-        cd ~/Software/Soiree/dancing-fire/
+        cd ~/Software/
+    end
+    # Doctor
+    function doctor
+        pkill gpg-agent
     end
 end

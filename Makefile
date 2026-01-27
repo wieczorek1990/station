@@ -24,7 +24,7 @@ versions:
 	rustc --version
 
 locations:
-	which fish
-	which python3
-	which swift
-	which rustc
+	which -a fish && echo
+	which -a python3 && echo
+	which -a swift && echo
+	which -a rustc
