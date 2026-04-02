@@ -39,6 +39,7 @@
 	td = tag -d
 	to = !touch
 	undo = reset --soft @~1
+	upstream = push --set-upstream origin main
 	vi = !vim
 [include]
 	path = ~/.gituser
