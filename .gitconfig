@@ -19,6 +19,7 @@
 	f = fetch --all --prune
 	l = log
 	lo = log --oneline
+	m = merge
 	p = push
 	pf = push --force
 	pt = push --tags
