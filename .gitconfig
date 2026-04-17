@@ -8,7 +8,6 @@
 	bm = branch -m
 	bn = checkout -b
 	br = branch -r
-	bu = branch -u
 	c = commit
 	cl = clone
 	cm = commit -m
