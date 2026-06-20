@@ -5,8 +5,8 @@
 ## Installing.
 
 ```sh
-git clone git@github.com:lukasz-piotr-jan-wieczorek/Station.git &&\
- cd Station &&\
+git clone git@bitbucket.org:soiree-tech/station.git &&\
+ cd station &&\
  make install &&\
  cd -
 ```

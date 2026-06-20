@@ -17,6 +17,7 @@
 	d = diff
 	dc = diff --cached
 	f = fetch --all --prune
+	hx = !hx
 	l = log
 	lo = log --oneline
 	m = merge
