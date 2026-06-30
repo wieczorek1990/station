@@ -1,11 +1,6 @@
 LN = ln
 
 install:
-	# bash
-	mkdir -p "${HOME}/.bashrc.d/"
-	${LN} -fs "${PWD}/.bashrc.d/up.sh" "${HOME}/.bashrc.d/up.sh"
-	# VIM
-	${LN} -fs "${PWD}/.vimrc" "${HOME}/.vimrc"
 	# Git
 	${LN} -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
 	# Fish
