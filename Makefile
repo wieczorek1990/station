@@ -8,9 +8,24 @@ install:
 	${LN} -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
 
 dependencies:
-	brew install\
- coreutils gh git gnupg imagemagick python3-devel readline-devel sox sponge tree vim\
- fish python rust swift
+	brew install \
+cloc coreutils fish gh git-lfs helix httpie imagemagick jq klavaro links moreutils ninja numpy sox tree unzip
+
+gitl:
+	mkdir -p ~/Software/ && \
+cd ~/Software/ && \
+git clone git@github.com:wieczorek1990/gitl.git && \
+cd gitl && \
+make install && \
+cd -
+
+stree:
+	mkdir -p ~/Software/ && \
+cd ~/Software/ && \
+git clone git@github.com:wieczorek1990/stree.git && \
+cd stree && \
+make install && \
+cd -
 
 versions:
 	fish --version && echo
