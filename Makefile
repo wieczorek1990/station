@@ -1,11 +1,9 @@
-LN = ln
-
-install:
+links:
 	# Git
-	${LN} -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
+	ln -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
 	# Fish
 	mkdir -p "${HOME}/.config/fish/"
-	${LN} -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
+	ln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
 
 dependencies:
 	brew install \
@@ -14,7 +12,8 @@ cloc coreutils fish gh git-lfs helix httpie imagemagick jq klavaro links moreuti
 gitl:
 	mkdir -p ~/Software/ && \
 cd ~/Software/ && \
-git clone git@github.com:wieczorek1990/gitl.git && \
+rm -rf gitl && \
+git clone --depth=1 git@github.com:wieczorek1990/gitl.git && \
 cd gitl && \
 make install && \
 cd -
@@ -22,7 +21,8 @@ cd -
 stree:
 	mkdir -p ~/Software/ && \
 cd ~/Software/ && \
-git clone git@github.com:wieczorek1990/stree.git && \
+rm -rf stree && \
+git clone --depth=1 git@github.com:wieczorek1990/stree.git && \
 cd stree && \
 make install && \
 cd -
@@ -38,3 +38,5 @@ locations:
 	which -a python3 && echo
 	which -a swift && echo
 	which -a rustc
+
+install: links dependencies gitl stree versions locations
