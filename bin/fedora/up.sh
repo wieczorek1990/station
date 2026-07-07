@@ -1,14 +1,17 @@
 #!/bin/sh
 # Updates Fedora.
+# Run this as root.
 
 echo "Starting update."
-sudo dnf upgrade --refresh --assumeyes
+dnf upgrade --refresh --assumeyes
 echo "Done update."
 
 echo "Starting reboot test."
 dnf needs-restarting
-# 0 is no restart
-if [ $? -ne 0 ]
+status=$?
+echo "Finished reboot test."
+# status 0 is no restart
+if [ $status -ne 0 ]
 then
   echo "Exiting with reboot."
   reboot
