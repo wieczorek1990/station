@@ -6,10 +6,15 @@ links:
 	mkdir -p "${HOME}/.config/fish/"
 	ln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
 
-dependencies:
+macos_dependencies:
 	echo -e "\n# DEPENDENCIES"
 	brew install \
-cloc coreutils fish gh git-lfs helix httpie imagemagick jq klavaro links moreutils ninja numpy sox tree unzip
+cloc coreutils fish gh git-lfs gnuplot helix httpie imagemagick jq klavaro links moreutils ninja numpy sox tree unzip
+
+fedora_dependencies:
+	echo -e "\n# DEPENDENCIES"
+	brew install \
+cloc coreutils fish gh git-lfs gnuplot helix httpie imagemagick jq klavaro links moreutils ninja numpy sox tree unzip
 
 gitl:
 	./bin/install.sh gitl
