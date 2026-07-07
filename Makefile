@@ -45,4 +45,4 @@ versions:
 	swiftc --version && echo
 	rustc --version
 
-install: links dependencies gitl stree versions locations
+install: links dependencies gitl eeree locations versions
