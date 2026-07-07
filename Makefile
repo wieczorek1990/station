@@ -12,24 +12,10 @@ dependencies:
 cloc coreutils fish gh git-lfs helix httpie imagemagick jq klavaro links moreutils ninja numpy sox tree unzip
 
 gitl:
-	echo -e "\n# GITL"
-	mkdir -p ~/Software/ && \
-cd ~/Software/ && \
-rm -rf gitl && \
-git clone --depth=1 git@github.com:wieczorek1990/gitl.git && \
-cd gitl && \
-make install && \
-cd -
+	./bin/install.sh gitl
 
 stree:
-	echo -e "\n# STREE"
-	mkdir -p ~/Software/ && \
-cd ~/Software/ && \
-rm -rf stree && \
-git clone --depth=1 git@github.com:wieczorek1990/stree.git && \
-cd stree && \
-make install && \
-cd -
+	./bin/install.sh stree
 
 locations:
 	echo -e "\n# LOCATIONS"
@@ -45,4 +31,7 @@ versions:
 	swiftc --version && echo
 	rustc --version
 
-install: links dependencies gitl eeree locations versions
+ssh:
+	ssh-add
+
+install: ssh links dependencies gitl stree locations versions
