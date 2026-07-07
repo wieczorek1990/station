@@ -34,4 +34,4 @@ versions:
 ssh:
 	ssh-add
 
-install: ssh links dependencies gitl stree locations versions
+install: ssh links gitl stree locations versions
