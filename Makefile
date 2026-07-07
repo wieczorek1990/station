@@ -13,8 +13,8 @@ cloc coreutils fish gh git-lfs gnuplot helix httpie imagemagick jq klavaro links
 
 fedora_dependencies:
 	echo -e "\n# DEPENDENCIES"
-	brew install \
-cloc coreutils fish gh git-lfs gnuplot helix httpie imagemagick jq klavaro links moreutils ninja numpy sox tree unzip
+	dnf install --assumeyes \
+cloc coreutils fish gh git-lfs gnuplot helix httpie ImageMagick jq klavaro links moreutils ninja numpy sox tree unzip
 
 gitl:
 	./bin/install.sh gitl
