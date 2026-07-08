@@ -7,6 +7,9 @@ links:
 	# Fish
 	mkdir -p "${HOME}/.config/fish/"
 	ln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
+	ln -fs "${PWD}/.config/fish/functions/home.fish" "${HOME}/.config/fish/functions/home.fish"
+	ln -fs "${PWD}/.config/fish/functions/init.fish" "${HOME}/.config/fish/functions/init.fish"
+	ln -fs "${PWD}/.config/fish/functions/up.fish" "${HOME}/.config/fish/functions/up.fish"
 
 macos_dependencies:
 	echo -e "\n# DEPENDENCIES"
