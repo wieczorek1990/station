@@ -1,4 +1,4 @@
 #!/bin/sh
-# Updaptes macOS.
+# Updates macOS.
 
 sudo softwareupdate --background
