@@ -2,6 +2,8 @@ links:
 	echo -e "\n# LINKS"
 	# Git
 	ln -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
+	# zsh
+	ln -fs "${PWD}/.zprofile" "${HOME}/.zprofile"
 	# Fish
 	mkdir -p "${HOME}/.config/fish/"
 	ln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"

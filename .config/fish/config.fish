@@ -1,4 +1,5 @@
 fish_add_path\
+ ~/.local/bin/\
  /usr/local/bin/\
  /opt/homebrew/bin/
 
@@ -20,9 +21,5 @@ if status is-interactive
     # Home
     function home
         cd ~/Software/
-    end
-    # Doctor
-    function doctor
-        pkill gpg-agent
     end
 end
