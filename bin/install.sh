@@ -11,4 +11,5 @@ rm -rf $name && \
 git clone --depth=1 git@github.com:wieczorek1990/$name.git && \
 cd $name && \
 make install && \
-cd -
+cd - && \
+rm -rf $name
