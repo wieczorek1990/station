@@ -18,14 +18,14 @@ stree:
 	./bin/install.sh stree
 
 locations:
-	echo "\n# LOCATIONS"
+	echo && echo "# LOCATIONS"
 	which -a fish && echo
 	which -a python3 && echo
 	which -a swift && echo
 	which -a rustc
 
 versions:
-	echo "\n# VERSIONS"
+	echo && echo "# VERSIONS"
 	fish --version && echo
 	python3 --version && echo
 	swiftc --version && echo
