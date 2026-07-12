@@ -12,16 +12,6 @@ links:
 	ln -fs "${PWD}/.config/fish/functions/init.fish" "${HOME}/.config/fish/functions/init.fish"
 	ln -fs "${PWD}/.config/fish/functions/up.fish" "${HOME}/.config/fish/functions/up.fish"
 
-macos_dependencies:
-	echo -e "\n# DEPENDENCIES"
-	brew install \
-cloc coreutils fish gh git-lfs gnuplot helix httpie imagemagick jq klavaro links moreutils ninja numpy sox tree unzip
-
-fedora_dependencies:
-	echo -e "\n# DEPENDENCIES"
-	dnf install --assumeyes \
-cloc coreutils fish gh git-lfs gnuplot helix httpie ImageMagick jq klavaro links moreutils ninja numpy sox tree unzip
-
 gitl:
 	./bin/install.sh gitl
 
