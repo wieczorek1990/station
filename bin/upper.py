@@ -6,8 +6,8 @@ import sys
 
 def main():
     first_argument = sys.argv[1]
-    capitalized = first_argument.upper()
-    print(capitalized)
+    upper = first_argument.upper()
+    print(upper)
 
 
 if __name__ == "__main__":

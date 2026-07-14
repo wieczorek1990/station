@@ -5,8 +5,11 @@
 ## Installing.
 
 ```sh
-git clone git@bitbucket.org:soiree-tech/station.git &&\
- cd station &&\
- make install &&\
- cd -
+git clone git@bitbucket.org:soiree-tech/station.git && cd station && make install && cd - >/dev/null
+```
+
+## Usage.
+
+```sh
+cd ~/Software/station/ && sudo su administrator -c "sudo ./bin/up.sh"
 ```

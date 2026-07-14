@@ -3,7 +3,6 @@
 
 system=$(python3 ./bin/system.py)
 echo "Your platform system is $system."
-echo "Proceeding with the update."
 
 if [[ $system == "Linux" ]]
 then
