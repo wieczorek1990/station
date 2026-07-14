@@ -11,5 +11,5 @@ git clone git@bitbucket.org:soiree-tech/station.git && cd station && make instal
 ## Usage.
 
 ```sh
-cd ~/Software/station/ && sudo su administrator -c "sudo ./bin/up.sh"
+cd ~/Software/station/ && su administrator -c "sudo ./bin/up.sh"
 ```
