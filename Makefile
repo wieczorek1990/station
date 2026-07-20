@@ -7,8 +7,8 @@ links:
 	# Fish
 	mkdir -p "${HOME}/.config/fish/"
 	ln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
+
 	mkdir -p "${HOME}/.config/fish/functions/"
-	ln -fs "${PWD}/.config/fish/functions/home.fish" "${HOME}/.config/fish/functions/home.fish"
 	ln -fs "${PWD}/.config/fish/functions/init.fish" "${HOME}/.config/fish/functions/init.fish"
 
 gitl:
@@ -31,7 +31,4 @@ versions:
 	swiftc --version && echo
 	rustc --version
 
-ssh:
-	ssh-add
-
-install: ssh links gitl stree locations versions
+install: links gitl stree locations versions
