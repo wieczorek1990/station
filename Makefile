@@ -25,7 +25,7 @@ dependencies_macos:
 
 locations:
 	echo && echo "# LOCATIONS"
-	which -a helix && echo
+	which -a hx && echo
 	which -a fish && echo
 	which -a python3 && echo
 	which -a swift && echo
@@ -33,7 +33,7 @@ locations:
 
 versions:
 	echo && echo "# VERSIONS"
-	helix --version && echo
+	hx --version && echo
 	fish --version && echo
 	python3 --version && echo
 	swiftc --version && echo
