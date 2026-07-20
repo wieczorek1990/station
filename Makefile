@@ -20,8 +20,8 @@ stree:
 dependencies_fedora:
 	sudo dnf install -y fish helix python3 swift-lang rust
 
-dependencis_macos:
-    sudo brew install fish helix python3 swift rust
+dependencies_macos:
+	sudo brew install fish helix python3 swift rust
 
 locations:
 	echo && echo "# LOCATIONS"
