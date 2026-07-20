@@ -17,8 +17,15 @@ gitl:
 stree:
 	./bin/install.sh stree
 
+dependencies_fedora:
+	sudo dnf install -y fish helix python3 swift-lang rust
+
+dependencis_macos:
+    sudo brew install fish helix python3 swift rust
+
 locations:
 	echo && echo "# LOCATIONS"
+	which -a helix && echo
 	which -a fish && echo
 	which -a python3 && echo
 	which -a swift && echo
@@ -26,6 +33,7 @@ locations:
 
 versions:
 	echo && echo "# VERSIONS"
+	helix --version && echo
 	fish --version && echo
 	python3 --version && echo
 	swiftc --version && echo
