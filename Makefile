@@ -1,7 +1,7 @@
 links:
 	echo -e "\n# LINKS"
 	# Git
-	# Please create a .gituser configuration file for user(nam, email)
+	# Please create a .gituser configuration file for user(name, email)
 	ln -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
 	# zsh
 	ln -fs "${PWD}/.zprofile" "${HOME}/.zprofile"
@@ -10,7 +10,7 @@ links:
 	# Fish
 	mkdir -p "${HOME}/.config/fish/"
 	ln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
-
+	# Fish functions
 	mkdir -p "${HOME}/.config/fish/functions/"
 	ln -fs "${PWD}/.config/fish/functions/init.fish" "${HOME}/.config/fish/functions/init.fish"
 
