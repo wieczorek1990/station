@@ -14,6 +14,7 @@ links:
 	mkdir -p "${HOME}/.config/fish/functions/"
 	ln -fs "${PWD}/.config/fish/functions/init.fish" "${HOME}/.config/fish/functions/init.fish"
 	ln -fs "${PWD}/.config/fish/functions/dush.fish" "${HOME}/.config/fish/functions/dush.fish"
+	ln -fs "${PWD}/.config/fish/functions/duh.fish" "${HOME}/.config/fish/functions/duh.fish"
 
 gitl:
 	./bin/install.sh gitl
