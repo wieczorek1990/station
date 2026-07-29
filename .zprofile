@@ -1,8 +1,12 @@
 # Helix
 export EDITOR=hx
-# Local
+# local
 export PATH=~/.local/bin:$PATH
+# opt
+export PATH=/opt/bin:$PATH
 # Fish
 export PATH=/Applications/fish.app/Contents/Resources/base/usr/local/bin:$PATH
+# Python
+export PATH=/Users/lukaszwieczorek/Library/Python/3.9/bin:$PATH
 # Rust
 . "$HOME/.cargo/env"

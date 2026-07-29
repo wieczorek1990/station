@@ -1,4 +1,6 @@
 # Helix
 export EDITOR=hx
-# Local
+# local
 export PATH=~/.local/bin:$PATH
+# opt
+export PATH=/opt/bin:$PATH
