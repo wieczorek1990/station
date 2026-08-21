@@ -32,7 +32,8 @@ locations:
 	which -a fish && echo
 	which -a python3 && echo
 	which -a swift && echo
-	which -a rustc
+	which -a rustc && echo
+	which -a ruby
 
 versions:
 	echo && echo "# VERSIONS"
@@ -40,6 +41,7 @@ versions:
 	fish --version && echo
 	python3 --version && echo
 	swiftc --version && echo
-	rustc --version
+	rustc --version && echo
+	ruby --version
 
 install: links gitl stree locations versions
