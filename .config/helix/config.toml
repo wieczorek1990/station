@@ -1,0 +1,4 @@
+[theme]
+light  = "solarized_light"
+dark = "solarized_dark"
+fallback = "default"

@@ -13,6 +13,9 @@ links:
 	# Fish functions
 	mkdir -p "${HOME}/.config/fish/functions/"
 	ln -fs "${PWD}/.config/fish/functions/init.fish" "${HOME}/.config/fish/functions/init.fish"
+	# Helix
+	mkdir -p "${HOME}/.config/helix/"
+	ln -fs "${PWD}/.config/helix/config.toml" "${HOME}/.config/helix/config.toml"
 
 gitl:
 	./bin/install.sh gitl
