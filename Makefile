@@ -22,7 +22,7 @@ stree:
 	./bin/install.sh stree
 
 fish:
-	./bin/install.sh fish-shell
+	sudo ./bin/install.sh fish-shell
 
 dependencies_fedora:
 	sudo dnf install -y fish helix python3 swift-lang rust
