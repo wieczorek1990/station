@@ -2,6 +2,10 @@
 
 `Station` is a new version of my dotfiles.
 
+## Dependencies
+
+ * [https://cmake.org/download/](CMake)
+
 ## Installing.
 
 ```sh
