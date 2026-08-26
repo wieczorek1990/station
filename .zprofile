@@ -1,6 +1,8 @@
 # Helix
 export EDITOR=hx
 
+# CMake
+export PATH=/Applications/CMake.app/Contents/bin:$PATH
 # Python
 export PATH=/Users/lukaszwieczorek/Library/Python/3.9/bin:$PATH
 # opt
