@@ -22,13 +22,13 @@ stree:
 	./bin/install.sh stree
 
 fish:
-	sudo ./bin/install.sh fish-shell
+	./bin/install.sh fish-shell
 
 dependencies_fedora:
-	sudo dnf install -y fish helix python3 swift-lang rust
+	 dnf install -y fish helix python3 swift-lang rust
 
 dependencies_macos:
-	sudo brew install fish helix python3 swift rust
+	brew install fish helix python3 swift rust
 
 locations:
 	echo && echo "# LOCATIONS"
