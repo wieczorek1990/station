@@ -6,8 +6,8 @@ upper_name=$(./bin/upper.py "$name")
 bearer="wieczorek1990"
 
 echo -e "\n# $upper_name"
-mkdir -p "~/Software/" && \
-cd "~/Software/" && \
+mkdir -p "${HOME}/Software/" && \
+cd "${HOME}/Software/" && \
 rm -rf "$name" && \
 git clone --depth=1 "https://github.com/${bearer}/${name}.git" && \
 cd "$name" && \
