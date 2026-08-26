@@ -24,6 +24,12 @@ stree:
 fish:
 	./bin/install.sh fish-shell
 
+rust:
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+swift:
+	xcode-select --install
+
 dependencies_fedora:
 	 dnf install -y fish helix python3 swift-lang rust
 
@@ -48,4 +54,7 @@ versions:
 	rustc --version && echo
 	ruby --version
 
-install: links gitl stree fish locations versions
+install: links\
+	 gitl stree\
+	 fish rust swift\
+	 locations versions
