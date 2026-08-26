@@ -23,6 +23,9 @@ gitl:
 stree:
 	./bin/install.sh stree
 
+fish:
+	./bin/install.sh fish-shell
+
 dependencies_fedora:
 	sudo dnf install -y fish helix python3 swift-lang rust
 
@@ -47,4 +50,4 @@ versions:
 	rustc --version && echo
 	ruby --version
 
-install: links gitl stree locations versions
+install: links gitl stree fish locations versions
