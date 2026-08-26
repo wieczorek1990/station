@@ -11,6 +11,6 @@ cd "~/Software/" && \
 rm -rf "$name" && \
 git clone --depth=1 "https://github.com/${bearer}/${name}.git" && \
 cd "$name" && \
-sudo make install && \
+make install && \
 cd - && \
 rm -rf "$name"
