@@ -5,8 +5,6 @@ links:
 	ln -fs "${PWD}/.gitconfig" "${HOME}/.gitconfig"
 	# zsh
 	ln -fs "${PWD}/.zprofile" "${HOME}/.zprofile"
-	# bash
-	ln -fs "${PWD}/.profile" "${HOME}/.profile"
 	# Fish
 	mkdir -p "${HOME}/.config/fish/"
 	ln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"

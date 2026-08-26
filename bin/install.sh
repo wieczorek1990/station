@@ -12,5 +12,5 @@ rm -rf "$name" && \
 git clone --depth=1 "https://github.com/${bearer}/${name}.git" && \
 cd "$name" && \
 make install && \
-cd - && \
+cd - >/dev/null && \
 rm -rf "$name"
