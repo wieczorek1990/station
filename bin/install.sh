@@ -5,11 +5,11 @@ name="$1"
 upper_name=$(./bin/upper.py "$name")
 bearer="wieczorek1990"
 
-echo -e "\n# $upper_name"
+echo -e "\n# ${upper_name}"
 mkdir -p "${HOME}/Software/" && \
 cd "${HOME}/Software/" && \
 rm -rf "$name" && \
-git clone --depth=1 "https://github.com/${bearer}/${name}.git" && \
+git clone --depth=1 git@github.com:${bearer}/${name}.git && \
 cd "$name" && \
 make install && \
 cd - >/dev/null && \

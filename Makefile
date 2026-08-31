@@ -28,7 +28,7 @@ rust:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 swift:
-	xcode-select --install
+	hash swift || xcode-select --install
 
 dependencies_fedora:
 	 dnf install -y fish helix python3 swift-lang rust
