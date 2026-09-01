@@ -28,7 +28,7 @@ cd "$name"
 
 if [[ "$make" -eq "false" ]]
 then
-    echo "Installing using bin script."
+    echo "Installing using script."
     ./bin/install.sh
 else
     echo "Installing using Makefile."
