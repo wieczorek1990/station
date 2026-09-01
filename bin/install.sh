@@ -5,13 +5,14 @@ if [ $# -eq 2 ]
 then
     if [ "$1" -eq "--bin" ]
     then
-        make="false"
+        binary="true"
         name="$2"
     else
         echo 'Invalid arguments.'
+        exit 1
     fi
 else
-    make="true"
+    binary="false"
     name="$1"
 fi
 
@@ -26,7 +27,7 @@ rm -rf "$name" && \
 git clone --depth=1 git@github.com:${bearer}/${name}.git && \
 cd "$name"
 
-if [[ "$make" -eq "false" ]]
+if [[ "$binary" == "true" ]]
 then
     echo "Installing using script."
     ./bin/install.sh
