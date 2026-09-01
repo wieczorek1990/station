@@ -2,9 +2,7 @@
 
 `Station` is a new version of my dotfiles.
 
-## Dependencies
-
- * [https://cmake.org/download/](CMake)
+The idea behind the project is to build as much a possible for the working station.
 
 ## Installing.
 
