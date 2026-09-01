@@ -15,20 +15,26 @@ links:
 	mkdir -p "${HOME}/.config/helix/"
 	ln -fs "${PWD}/.config/helix/config.toml" "${HOME}/.config/helix/config.toml"
 
-cmake:
-	./bin/install.sh cmake
-
-helix:
-	./bin/install.sh helix
-
 gitl:
 	./bin/install.sh gitl
 
 stree:
 	./bin/install.sh stree
 
+cmake:
+	./bin/install.sh install-cmake
+
+helix:
+	./bin/install.sh install-helix
+
 fish:
-	./bin/install.sh fish-shell
+	./bin/install.sh install-fish
+
+python:
+	./bin/install.sh install-python
+
+ruby:
+	./bin/install.sh install-ruby
 
 rust:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -62,6 +68,6 @@ versions:
 
 install: links\
 	 cmake\
-	 helix gitl stree\
 	 fish rust swift\
+	 helix gitl stree\
 	 locations versions

@@ -5,13 +5,13 @@ if [ $# -eq 2 ]
 then
     if [ "$1" -eq "--bin" ]
     then
-        make=false
+        make="false"
         name="$2"
     else
         echo 'Invalid arguments.'
     fi
 else
-    make=true
+    make="true"
     name="$1"
 fi
 
@@ -26,10 +26,12 @@ rm -rf "$name" && \
 git clone --depth=1 git@github.com:${bearer}/${name}.git && \
 cd "$name"
 
-if [ make -eq false ]
+if [[ "$make" -eq "false" ]]
 then
+    echo "Installing using bin script."
     ./bin/install.sh
 else
+    echo "Installing using Makefile."
     make install
 fi
 
