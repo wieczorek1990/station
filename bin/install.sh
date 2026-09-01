@@ -1,6 +1,20 @@
 #!/bin/sh
 # Installs from git repository.
 
+if [ $# -eq 2 ]
+then
+    if [ "$1" -eq "--bin" ]
+    then
+        make=false
+        name="$2"
+    else
+        echo 'Invalid arguments.'
+    fi
+else
+    make=true
+    name="$1"
+fi
+
 name="$1"
 upper_name=$(./bin/upper.py "$name")
 bearer="wieczorek1990"
@@ -10,7 +24,14 @@ mkdir -p "${HOME}/Software/" && \
 cd "${HOME}/Software/" && \
 rm -rf "$name" && \
 git clone --depth=1 git@github.com:${bearer}/${name}.git && \
-cd "$name" && \
-make install && \
+cd "$name"
+
+if [ make -eq false ]
+then
+    ./bin/install.sh
+else
+    make install
+fi
+
 cd - >/dev/null && \
 rm -rf "$name"
