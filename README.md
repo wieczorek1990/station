@@ -17,3 +17,8 @@ git clone git@bitbucket.org:soiree-tech/station.git && cd station && make instal
 ```sh
 cd ~/Software/station/ && su administrator -c "sudo ./bin/up.sh"
 ```
+
+## Other
+
+* [https://zed.dev/download](Zed)
+* [https://iterm2.com/downloads.html](iTerm2)
