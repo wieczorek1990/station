@@ -15,6 +15,12 @@ links:
 	mkdir -p "${HOME}/.config/helix/"
 	ln -fs "${PWD}/.config/helix/config.toml" "${HOME}/.config/helix/config.toml"
 
+cmake:
+	./bin/install.sh cmake
+
+helix:
+	./bin/install.sh helix
+
 gitl:
 	./bin/install.sh gitl
 
@@ -55,6 +61,7 @@ versions:
 	ruby --version
 
 install: links\
-	 gitl stree\
+	 cmake\
+	 helix gitl stree\
 	 fish rust swift\
 	 locations versions
