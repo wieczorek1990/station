@@ -43,13 +43,14 @@ swift:
 	hash swift || xcode-select --install
 
 dependencies_fedora:
-	 dnf install -y fish helix python3 swift-lang rust
+	 dnf install -y cmake fish helix python3 swift-lang rust
 
 dependencies_macos:
-	brew install fish helix python3 swift rust
+	brew install cmake fish helix python3 swift rust
 
 locations:
 	echo && echo "# LOCATIONS"
+	which -a cmake && echo
 	which -a hx && echo
 	which -a fish && echo
 	which -a python3 && echo
@@ -59,6 +60,7 @@ locations:
 
 versions:
 	echo && echo "# VERSIONS"
+	cmake --version && echo
 	hx --version && echo
 	fish --version && echo
 	python3 --version && echo
@@ -68,6 +70,6 @@ versions:
 
 install: links\
 	 cmake\
-	 fish rust swift\
+	 fish python rust swift\
 	 helix gitl stree\
 	 locations versions
