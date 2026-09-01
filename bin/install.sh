@@ -3,7 +3,7 @@
 
 if [ $# -eq 2 ]
 then
-    if [ "$1" -eq "--bin" ]
+    if [[ "$1" -eq "--bin" ]]
     then
         binary="true"
         name="$2"
@@ -16,7 +16,6 @@ else
     name="$1"
 fi
 
-name="$1"
 upper_name=$(./bin/upper.py "$name")
 bearer="wieczorek1990"
 
