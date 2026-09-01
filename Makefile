@@ -22,7 +22,7 @@ stree:
 	./bin/install.sh stree
 
 cmake:
-	./bin/install.sh --bin install-cmake
+	./bin/install.sh install-cmake
 
 helix:
 	./bin/install.sh install-helix
