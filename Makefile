@@ -15,6 +15,9 @@ links:
 	mkdir -p "${HOME}/.config/helix/"
 	ln -fs "${PWD}/.config/helix/config.toml" "${HOME}/.config/helix/config.toml"
 
+fish:
+	./bin/install.sh fish-shell
+
 gitl:
 	./bin/install.sh gitl
 
@@ -26,9 +29,6 @@ cmake:
 
 helix:
 	./bin/install.sh install-helix
-
-fish:
-	./bin/install.sh install-fish
 
 python:
 	./bin/install.sh install-python
