@@ -37,7 +37,7 @@ ruby:
 	./bin/install.sh install-ruby
 
 rust:
-	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 swift:
 	hash swift || xcode-select --install
