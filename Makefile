@@ -42,6 +42,9 @@ rust:
 swift:
 	hash swift || xcode-select --install
 
+swift-format:
+	./bin/install.sh install-swift-format
+
 dependencies_fedora:
 	 dnf install -y cmake fish helix python3 swift-lang rust
 
