@@ -76,3 +76,6 @@ install: links\
 	 fish python rust swift\
 	 helix gitl stree\
 	 locations versions
+
+upgrade:
+	rustup update
