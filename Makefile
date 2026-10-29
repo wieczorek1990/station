@@ -16,7 +16,7 @@ links:
 	ln -fs "${PWD}/.config/helix/config.toml" "${HOME}/.config/helix/config.toml"
 
 fish:
-	./bin/install.sh fish-shell
+	./bin/install.sh install-fish-shell
 
 gitl:
 	./bin/install.sh gitl
