@@ -16,7 +16,14 @@ git clone git@bitbucket.org:soiree-tech/station.git && cd station && make instal
 cd ~/Software/station/ && su administrator -c "sudo ./bin/up.sh"
 ```
 
-## Other
-
-* [https://zed.dev/download](Zed)
-* [https://iterm2.com/downloads.html](iTerm2)
+# Related:
+ * https://github.com/wieczorek1990/fish-shell
+ * https://github.com/wieczorek1990/gitl
+ * https://github.com/wieczorek1990/stree
+ * https://github.com/wieczorek1990/install-cmake
+ * https://github.com/wieczorek1990/install-helix
+ * https://github.com/wieczorek1990/install-python
+ * https://github.com/wieczorek1990/install-ruby
+ * https://rustup.rs
+ * https://www.swift.org/install/macos/
+ * https://github.com/wieczorek1990/install-swift-format

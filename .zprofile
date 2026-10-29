@@ -15,3 +15,13 @@ export PATH=/Applications/fish.app/Contents/Resources/base/usr/local/bin:$PATH
 
 # Rust
 . "$HOME/.cargo/env"
+
+# Setting PATH for Python 3.14
+# The original version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 3.15
+# The original version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.15/bin:${PATH}"
+export PATH
