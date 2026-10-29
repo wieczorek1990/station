@@ -7,7 +7,7 @@ The idea behind the project is to build as much a possible for the working stati
 ## Installing.
 
 ```sh
-git clone git@bitbucket.org:soiree-tech/station.git && cd station && make install
+git clone git@bitbucket.org:soiree-tech/station.git && cd station/ && make install
 ```
 
 ## Usage.
