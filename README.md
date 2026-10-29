@@ -17,7 +17,7 @@ cd ~/Software/station/ && su administrator -c "sudo ./bin/up.sh"
 ```
 
 # Related:
- * https://github.com/wieczorek1990/fish-shell
+ * https://github.com/wieczorek1990/install-fish
  * https://github.com/wieczorek1990/gitl
  * https://github.com/wieczorek1990/stree
  * https://github.com/wieczorek1990/install-cmake
