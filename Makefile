@@ -77,5 +77,17 @@ install: links\
 	 helix gitl stree\
 	 locations versions
 
+clean:
+	echo -e "\n# CLEAN"
+	# Git
+	rm -f "${HOME}/.gitconfig"
+	# zsh
+	rm -f "${HOME}/.zprofile"
+	# Fish
+	rm -f "${HOME}/.config/fish/config.fish"
+	rm -f "${HOME}/.config/fish/functions/init.fish"
+	# Helix
+	rm -f "${HOME}/.config/helix/config.toml"
+
 upgrade:
 	rustup update
