@@ -8,9 +8,10 @@ links:
 	# Fish
 	mkdir -p "${HOME}/.config/fish/"
 	ln -fs "${PWD}/.config/fish/config.fish" "${HOME}/.config/fish/config.fish"
-	# Fish functions
+ # Fish functions
 	mkdir -p "${HOME}/.config/fish/functions/"
 	ln -fs "${PWD}/.config/fish/functions/init.fish" "${HOME}/.config/fish/functions/init.fish"
+	ln -fs "${PWD}/.config/fish/functions/sledz.fish" "${HOME}/.config/fish/functions/sledz.fish"
 	# Helix
 	mkdir -p "${HOME}/.config/helix/"
 	ln -fs "${PWD}/.config/helix/config.toml" "${HOME}/.config/helix/config.toml"
@@ -86,6 +87,7 @@ clean:
 	# Fish
 	rm -f "${HOME}/.config/fish/config.fish"
 	rm -f "${HOME}/.config/fish/functions/init.fish"
+	rm -f "${HOME}/.config/fish/functions/sledz.fish"
 	# Helix
 	rm -f "${HOME}/.config/helix/config.toml"
 
